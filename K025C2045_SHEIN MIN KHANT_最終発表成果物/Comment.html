@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>コメントフォーム</title>
+  <link rel="stylesheet" href="CSS/comment.css">
+</head>
+<body>
+  <div class="container">
+    <label>名前</label>
+    <input type="text">
+
+    <label>性別</label>
+    <div class="radio-group">
+      <label><input type="radio" name="gender" checked> 男性</label>
+      <label><input type="radio" name="gender"> 女性</label>
+    </div>
+
+    <label>メールアドレス</label>
+    <input type="email">
+
+    <label>コメント回数</label>
+    <div class="radio-group">
+      <label><input type="radio" name="count"> 初めて</label>
+      <label><input type="radio" name="count"> 2回目</label>
+      <label><input type="radio" name="count"> 3回目以上</label>
+    </div>
+
+    <label>このページをどこで知りましたか？</label>
+    <select>
+      <option>友人の紹介</option>
+      <option>SNS</option>
+      <option>検索エンジン</option>
+    </select>
+
+    <label>コメント</label>
+    <textarea id="comment"></textarea>
+    <div class="count" id="counter">現在: 0文字</div>
+
+    <button>送信</button>
+  </div>
+
+  <script src="JS/comment.js"></script>
+</body>
+</html>

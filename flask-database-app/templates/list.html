@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile List</title>
+</head>
+<body>
+
+<h1>Profile List</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>MBTI</th>
+        <th>Introduction</th>
+    </tr>
+
+    {% for person in people %}
+    <tr>
+        <td>{{ person[0] }}</td>
+        <td>{{ person[1] }}</td>
+        <td>{{ person[2] }}</td>
+        <td>{{ person[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br>
+<a href="/">Back</a>
+
+</body>
+</html>
